@@ -1,0 +1,93 @@
+<div class="container">
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h1 class="text-center">Add Student Details</h1>
+</div>
+
+<div class="panel-body">
+<form class="form-horizontal" method="post" action="/add">
+
+<div class="form-group">
+<div class="col-sm-6">
+<label class="control-label">STUDENT NAME</label>
+</div>
+<div class="col-sm-6">
+<input type="text" name="name" placeholder="name" class="form-control">
+</div>
+</div>
+
+
+<div class="form-group">
+<div class="col-sm-6">
+<label class="control-label">AGE</label>
+</div>
+<div class="col-sm-6">
+<input type="text" name="age" placeholder="age" class="form-control">
+</div>
+</div>
+
+
+<div class="form-group">
+<div class="col-sm-6">
+<label class="control-label">GENDER</label>
+</div>
+<div class="col-sm-6">
+<input type="radio" name="gender" value="male">Male
+<input type="radio" name="gender" value="female">Female
+</div>
+</div>
+
+<div class="form-group">
+<div class="col-sm-6">
+<label class="control-label">HOBBIES</label>
+</div>
+<div class="col-sm-6">
+<input type="checkbox" name="hobbies" value="dancing">Dancing<br>
+<input type="checkbox" name="hobbies" value="listening-music">Listening music<br>
+<input type="checkbox" name="hobbies" value="Modelling">Modelling<br>
+<input type="checkbox" name="hobbies" value="Exploring Places">Exploring Places<br>
+</div>
+</div><br>
+
+<div class="form-group">
+<div class="col-sm-6">
+<label class="control-label">ADDRESS</label>
+</div>
+<div class="col-sm-6">
+<textarea class="form-control" placeholder="address" name="address"></textarea>
+</div>
+</div>
+
+
+<div class="form-group">
+<div class="col-sm-6">
+<label class="control-label">CITY</label>
+</div>
+<div class="col-sm-6">
+<select class="form-control" name="city">
+<option>SELECT CITY</option>
+<option>Pune</option>
+<option>Mumbai</option>
+<option>Indore</option>
+<option>Banglore</option>
+</select>
+</div>
+</div>
+
+
+<div class="panel-footer">
+<button class="btn btn-primary btn-block" type="submit">SUBMIT</button>
+</div>
+
+<div>
+<b><%=message%></b>
+</div>
+
+<!-- <input type="hidden" name="id">
+ -->
+</form>
+</div>
+
+</div>
+</div>
+

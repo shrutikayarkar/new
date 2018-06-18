@@ -1,0 +1,24 @@
+<div class="container">
+<div class="well">
+<h1 class="text-center">view Image</h1>
+</div>
+
+<table class="table table-borderd table-stripped table-hover">
+<tr>
+<th>S.no</th>
+<th>TITLE</th>
+<th>IMAGE</th>
+<th>DELETE</th>
+</tr>
+
+<%data.forEach(function(x,i){%>
+<tr>
+<td><%=i+1%></td>
+<td><%=x.title%></td>
+<td><img src="/images/upload/<%=x.image%>" height="70" width="70"></td>
+<td><a href="/view_image/remove/<%=x._id%>" class="btn btn-primary" type="submit">Delete</a></td>
+</tr>
+
+<%})%>
+</table>
+</div>
